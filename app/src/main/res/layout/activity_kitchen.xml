@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KitchenActivity">
+
+    <FrameLayout
+        android:id="@+id/Home_Frame"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTerm" />
+
+    <TextView
+        android:id="@+id/textViewFon"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="#282142"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titleKitchen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Kitchen"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewFon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewFon"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/add"
+        android:layout_width="44dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#2A2044"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewFon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.986"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/iadd" />
+
+    <ImageButton
+        android:id="@+id/light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFon"
+        app:srcCompat="@drawable/light2" />
+
+    <ImageButton
+        android:id="@+id/term"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.155"
+        app:layout_constraintStart_toEndOf="@+id/light"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFon"
+        app:srcCompat="@drawable/thermostat" />
+
+    <TextView
+        android:id="@+id/tvLight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Light"
+        android:textColor="#757575"
+        app:layout_constraintEnd_toEndOf="@+id/light"
+        app:layout_constraintStart_toStartOf="@+id/light"
+        app:layout_constraintTop_toBottomOf="@+id/light" />
+
+    <TextView
+        android:id="@+id/tvTerm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thermostat"
+        app:layout_constraintEnd_toEndOf="@+id/term"
+        app:layout_constraintStart_toStartOf="@+id/term"
+        app:layout_constraintTop_toBottomOf="@+id/term" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
